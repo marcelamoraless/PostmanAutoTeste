@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "f27f7e2e-25ec-4e62-8de0-1426f0a66a16",
+		"name": "Testes Narwal Sistema",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42497360"
+	},
+	"item": [
+		{
+			"name": "CriandoRep",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Teste-Narwal\",\r\n  \"description\": \"Criando um repositório para o teste da Narwal\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.github.com/user/repos"
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaRep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.github.com/repos/marcelamoraless/Teste-Narwal"
+			},
+			"response": []
+		},
+		{
+			"name": "IssueRep",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Problemas de automação\",\r\n  \"body\": \"Realizando uma issue para teste solicitado\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://api.github.com/repos/marcelamoraless/Teste-Narwal/issues"
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultaIssueRep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://api.github.com/repos/marcelamoraless/Teste-Narwal/issues"
+			},
+			"response": []
+		},
+		{
+			"name": "DeletandoRep",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://api.github.com/repos/marcelamoraless/Teste-Narwal"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "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"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
